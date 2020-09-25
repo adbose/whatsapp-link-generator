@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>WhatsApp Link Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>WhatsApp Chat Link Generator</h2>
+            <i class="fa fa-whatsapp"></i>
+        </div>
+        <div class="note">
+            <p class="note-1">Enter your phone number in International format including country code and area code</p>
+            <p class="note-2">Omit any leading zeroes, plus sign, and other symbols like brackets and dashes</p>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="phone-number">Number</label>
+                <input type="text" placeholder="Enter WhatsApp Number" id="phone-number">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="message">Message</label>
+                <input type="text" placeholder="Enter Prepared Message" id="message">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <button type="submit">Generate</button>
+        </form>
+        <div class="result">
+            <p id="link"></p>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+
+</html>
