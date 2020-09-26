@@ -42,5 +42,7 @@ function generateLink(number, message) {
 	let url = "https://wa.me/";
 	let endUrl = `${url}${number}?text=${encodeURIComponent(message)}`;
 	document.getElementById('link').innerText = endUrl;
-  }
+	document.getElementById('msg').innerText = 'Share the link below to let others message you on WhatsApp';
+
+}
 
